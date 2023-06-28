@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src='action.js'></script> -->
+</head>
+
+<body>
+    <b>Please select a router URL from - (1)
+        <button style="cursor: pointer" id="page1">Page 1</button>
+        or (2)
+        <button style="cursor: pointer" id="page2">Page 2</button></b>
+</body>
+<script type="text/javascript">
+    document.getElementById('page1').addEventListener('click', function () {
+        console.log('page1 clicked');
+        window.open('/page1', '_self')
+    })
+
+    document.getElementById('page2').addEventListener('click', function () {
+        console.log('page2 clicked');
+        window.open('/page2', '_self')
+    })
+</script>
+
+</html>
